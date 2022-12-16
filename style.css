@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: 'Gruppo', cursive;
+body {
+  font-family: "Gruppo", cursive;
 }
 
 .container {
@@ -22,20 +22,19 @@ nav {
 .list {
   display: flex;
   padding-right: 10px;
-
 }
 
 .list-item {
   margin: 30px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 2em;
   list-style-type: none;
   display: inline-block;
   padding-bottom: 0.25rem;
   position: relative;
 }
-.list-item::before{
-    content: '';
+.list-item::before {
+  content: "";
   position: absolute;
   background-color: black;
   height: 2px;
@@ -45,8 +44,7 @@ nav {
   transition: transform 0.25s ease-out;
 }
 
-
-.list-item:hover::before{
+.list-item:hover::before {
   width: 100%;
   right: auto;
   left: 0;
@@ -57,7 +55,7 @@ nav .button-group {
   margin-right: 50px;
 }
 .nav-button {
-  font-size: 1.3em;
+  font-size: 1.5em;
   padding: 2px 40px;
   border-radius: 10px;
   border: 3px solid black;
@@ -65,109 +63,106 @@ nav .button-group {
   color: #615f5f;
   margin-left: 15%;
 }
-.square >img{
-    position: absolute;
-    height: 350px;
-    width: 350px;
-    bottom:70px;
-    left: 15%;
-    
+.square > img {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  bottom: 70px;
+  left: 15%;
 }
-.hero-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;   
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.hero-container >div >img{
-    height: 450px;
-    position: absolute;
-    top: 24%;
-    left: 8%;
+.hero-container > div > img {
+  height: 450px;
+  position: absolute;
+  top: 24%;
+  left: 8%;
 }
-.star >img{
-    position: absolute;
-    top:15%;
-    right: 8%; 
-    height: 50px;
-    width: 50px;
+.star > img {
+  position: absolute;
+  top: 15%;
+  right: 8%;
+  height: 50px;
+  width: 50px;
 }
-.globe > img{
-    position: absolute;
-    top:15%;
-    left: 55%;   
-    height: 50px;
-    width: 50px;
+.globe > img {
+  position: absolute;
+  top: 15%;
+  left: 55%;
+  height: 50px;
+  width: 50px;
 }
-.hero-container-right{
-    position: absolute;
-    right: 0px;
-    top: 30%;
-    align-items: center;
-    width: 60%;
-    height: 60%;
-    padding: 10px;    
+.hero-container-right {
+  position: absolute;
+  right: 0px;
+  top: 30%;
+  align-items: center;
+  width: 60%;
+  height: 60%;
+  padding: 10px;
 }
-.hero-heading{
-    font-size: 3em;
-    text-align: center;
-    padding: 40px  30px 50px;
+.hero-heading {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  padding: 40px 30px 50px;
 }
-.hero-description{
-    text-align:center;
-    padding: 0px 10% 40px 0px;
+.hero-description {
+  text-align: center;
+  padding: 0px 10% 40px 0px;
+  font-size: 1.5em;
 }
-.hero-container-right >div{ 
-    align-items: center;
+.hero-container-right > div {
+  align-items: center;
 }
-.hero-container >hero-container-right > div >button{
-    position: absolute;
-    align-items: center;
-    display:block; 
+.hero-container > hero-container-right > div > button {
+  position: absolute;
+  align-items: center;
+  display: block;
 }
 
-.button-email{
-    border-color: black;
-    padding: 5px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 5px;
-    border-radius: 10px;
-    font-size: 1rem;
-    left: 20%;
-    top: 45%; 
-    position: absolute;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
+.button-email {
+  border-color: black;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 5px;
+  border-radius: 10px;
+  font-size: 1rem;
+  left: 20%;
+  top: 45%;
+  position: absolute;
+  margin-top: 50px;
 }
 .button-join {
-    background-color: black;
-    color: white;
-    padding: 5px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 5px;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: 200;
-    left: 45%;
-    top: 45%; 
-    position: absolute;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  background-color: black;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 5px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 200;
+  left: 45%;
+  top: 45%;
+  position: absolute;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-div .contact-heading{
-    text-align: center;
-    font-size: 30px;
-    left: 32%;
-    bottom:100px;
-    position: absolute;
- } 
-div .icons{
-    left: 32%;
-    bottom:10px;
-    position: absolute;
+div .contact-heading {
+  text-align: center;
+  font-size: 30px;
+  left: 32%;
+  bottom: 100px;
+  position: absolute;
 }
-
-
+div .icons {
+  left: 32%;
+  bottom: 10px;
+  position: absolute;
+}
